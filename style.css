@@ -1,0 +1,82 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  min-width: 1000px;
+  overflow: scroll;
+}
+#game_grid {
+  display: grid;
+  width: 700px;
+  min-height: 700px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+}
+.white {
+  background-color: beige;
+}
+.black {
+  display: flex;
+  background-color: brown;
+}
+
+.game_border {
+  box-sizing: border-box;
+  border: 15px ridge maroon;
+}
+.white_pawn {
+  background-color: #fffdd0;
+  flex-grow: 1;
+  border-radius: 50%;
+  box-shadow: 2px 1px black;
+}
+.black_pawn {
+  background-color: black;
+  flex-grow: 1;
+  border-radius: 50%;
+  box-shadow: 2px 1px #4a4a4a;
+}
+button {
+  border: none;
+}
+.button_border {
+  display: flex;
+  box-sizing: border-box;
+  border: 10px ridge maroon;
+  width: 200px;
+  height: 200px;
+}
+#new_game {
+  flex-grow: 1;
+  background-color: khaki;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18pt;
+}
+#new_game:visited {
+  flex-grow: 1;
+  background-color: khaki;
+  cursor: pointer;
+}
+#new_game:hover {
+  flex-grow: 1;
+  background-color: white;
+  cursor: pointer;
+}
+#white_game {
+  flex-grow: 1;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18pt;
+}
+.buttons {
+  margin-top: 150px;
+  margin-left: 50px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
